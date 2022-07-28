@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CombinationSum4",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.CombinationSum4",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindMaxForm",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.FindMaxForm",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch TirmBST",
             "request": "launch",
             "mainClass": "BinaryTree.TirmBST",
