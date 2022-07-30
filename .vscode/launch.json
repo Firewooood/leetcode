@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Rob",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.Rob",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch WorkBreak",
             "request": "launch",
             "mainClass": "DynamicProgramming.WorkBreak",
