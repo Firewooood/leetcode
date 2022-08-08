@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NextGreaterElements",
+            "request": "launch",
+            "mainClass": "MonotonicStack.NextGreaterElements",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch NextGreaterElement",
+            "request": "launch",
+            "mainClass": "MonotonicStack.NextGreaterElement",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch DailyTemperatures",
+            "request": "launch",
+            "mainClass": "MonotonicStack.DailyTemperatures",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountSubString",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.CountSubString",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinDistance",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.MinDistance",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch NumDistinct",
             "request": "launch",
             "mainClass": "DynamicProgramming.NumDistinct",
