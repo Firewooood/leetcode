@@ -1,15 +1,18 @@
-class TireNode{
-    boolean isWord; //若为true，则表示该字符为一字符串的结尾。
+package done;
+
+class TireNode {
+    boolean isWord; // 若为true，则表示该字符为一字符串的结尾。
     TireNode[] children = new TireNode[26];
 }
 
 class Trie {
     TireNode root;
-    //构造一个空的树
+
+    // 构造一个空的树
     public Trie() {
         root = new TireNode();
     }
-    
+
     public void insert(String word) {
         TireNode cur = root;
         for (int i = 0; i < word.length(); i++) {
@@ -21,7 +24,7 @@ class Trie {
         }
         cur.isWord = true;
     }
-    
+
     public boolean search(String word) {
         int len = word.length();
         TireNode cur = root;
@@ -36,7 +39,7 @@ class Trie {
             return true;
         return false;
     }
-    
+
     public boolean startsWith(String prefix) {
         int len = prefix.length();
         TireNode cur = root;
@@ -57,7 +60,7 @@ class Trie {
         System.out.println(trie.search("apple"));
         System.out.println(trie.startsWith("ap"));
         System.out.println(trie.search("apl"));
-        
+
     }
 }
 

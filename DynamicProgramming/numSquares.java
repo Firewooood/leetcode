@@ -2,7 +2,7 @@ package DynamicProgramming;
 
 import java.util.Arrays;
 
-public class numSquares {
+public class NumSquares {
     public int numSquares(int n) {
         int[] dp = new int[n + 1]; // 和为i的完全平方数的最小数量为dp[i]
         Arrays.fill(dp, Integer.MAX_VALUE);
@@ -19,7 +19,7 @@ public class numSquares {
     }
 
     public static void main(String[] args) {
-        numSquares n1 = new numSquares();
+        NumSquares n1 = new NumSquares();
         System.out.println(n1.numSquares(12));
     }
 }

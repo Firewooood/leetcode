@@ -1,21 +1,23 @@
+package done;
+
 import java.util.Random;
 
-class Animal  {
- 
+class Animal {
+
 	protected void eat() {
 		System.out.println("animal eat food");
 	}
 }
 
-class Cat  extends Animal  {
- 
+class Cat extends Animal {
+
 	protected void eat() {
 		System.out.println("cat eat fish");
 	}
 }
 
-class Dog  extends Animal  {
- 
+class Dog extends Animal {
+
 	public void eat() {
 		System.out.println("Dog eat bone");
 
@@ -23,13 +25,13 @@ class Dog  extends Animal  {
 
 }
 
-class Sheep  extends Animal  {
- 
+class Sheep extends Animal {
+
 	public void eat() {
 		System.out.println("Sheep eat grass");
 
 	}
- 
+
 }
 
 public class InterviewTest {

@@ -1,3 +1,5 @@
+package done;
+
 import java.util.ArrayList;
 
 import java.util.List;
@@ -8,8 +10,8 @@ public class findWords {
     public static void main(String[] args) {
         String[] input = { "Hello", "Alaska", "Dad", "Peace" };
         String[] res = f1(input);
-        for(String x:res)
-        System.out.println(x);
+        for (String x : res)
+            System.out.println(x);
     }
 
     public static String[] f1(String[] words) {
@@ -18,7 +20,7 @@ public class findWords {
         String s2 = "asdfghjklASDFGHJKL";
         String s3 = "zxcvbnmZXCVBNM";
         for (String word : words) {
-            int n1=0,n2=0,n3=0,len = word.length();
+            int n1 = 0, n2 = 0, n3 = 0, len = word.length();
             out: for (int i = 0; i < word.length(); i++) {
                 if (s1.contains(word.charAt(i) + ""))
                     n1++;

@@ -1,3 +1,5 @@
+package done;
+
 public class Kids extends ManKind {
     int yearsOld;
 

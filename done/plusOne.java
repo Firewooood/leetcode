@@ -1,3 +1,5 @@
+package done;
+
 public class plusOne {
     public int[] f(int[] nums) {
         int n = nums.length;
@@ -19,12 +21,14 @@ public class plusOne {
             return res;
         }
         return nums;
-        
+
     }
+
     public static void main(String[] args) {
         plusOne p = new plusOne();
-        int[] nums = { 9,9,9,9,9 };
+        int[] nums = { 9, 9, 9, 9, 9 };
         int[] res = p.f(nums);
-        for(int x:res)System.out.println(x);
+        for (int x : res)
+            System.out.println(x);
     }
 }

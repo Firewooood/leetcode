@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MyLinkedList1",
+            "request": "launch",
+            "mainClass": "LinkedList.MyLinkedList1",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinSubArrayLen",
+            "request": "launch",
+            "mainClass": "MinSubArrayLen",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch test1",
+            "request": "launch",
+            "mainClass": "test1",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch RestoreIpAddresses",
+            "request": "launch",
+            "mainClass": "BackTracking.RestoreIpAddresses",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch LastStoneWeightII",
+            "request": "launch",
+            "mainClass": "DynamicProgramming.LastStoneWeightII",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch Jump",
+            "request": "launch",
+            "mainClass": "greed.Jump",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestRectangleArea",
+            "request": "launch",
+            "mainClass": "MonotonicStack.LargestRectangleArea",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch Trap",
+            "request": "launch",
+            "mainClass": "MonotonicStack.Trap",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch NextGreaterElements",
             "request": "launch",
             "mainClass": "MonotonicStack.NextGreaterElements",
