@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FourSum",
+            "request": "launch",
+            "mainClass": "HashMap.FourSum",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch MyLinkedList1",
             "request": "launch",
             "mainClass": "LinkedList.MyLinkedList1",

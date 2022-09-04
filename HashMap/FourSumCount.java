@@ -60,12 +60,38 @@ public class FourSumCount {
         return res;
     }
 
+    public int fourSumCount3(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
+        int res = 0;
+        int n = nums1.length;
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int target = (nums1[i] + nums2[j]);
+                if (map.containsKey(target)) {
+                    map.put(target, map.get(target) + 1);
+                } else {
+                    map.put(target, 1);
+                }
+            }
+        }
+
+        for (int k = 0; k < n; k++) {
+            for (int l = 0; l < n; l++) {
+                int tmp = -(nums3[k] + nums4[l]);
+                if (map.containsKey(tmp)) {
+                    res += map.get(tmp);
+                }
+            }
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         FourSumCount f1 = new FourSumCount();
         int[] nums1 = { 1, 2 };
         int[] nums2 = { -1, 2 };
         int[] nums3 = { -2, -1 };
         int[] nums4 = { 0, 2 };
-        System.out.println(f1.fourSumCount(nums1, nums2, nums3, nums4));
+        System.out.println(f1.fourSumCount3(nums1, nums2, nums3, nums4));
     }
 }
