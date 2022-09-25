@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FindMinArrowShots",
+            "request": "launch",
+            "mainClass": "Greed.FindMinArrowShots",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReconstructQueue",
+            "request": "launch",
+            "mainClass": "Greed.ReconstructQueue",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch LemonadeChange",
+            "request": "launch",
+            "mainClass": "Greed.LemonadeChange",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch Candy",
+            "request": "launch",
+            "mainClass": "Greed.Candy",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch CanCompleteCircuit",
+            "request": "launch",
+            "mainClass": "Greed.CanCompleteCircuit",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch JargestSumAfterKNegations",
+            "request": "launch",
+            "mainClass": "Greed.JargestSumAfterKNegations",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch WiggleMaxLength",
+            "request": "launch",
+            "mainClass": "Greed.WiggleMaxLength",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch test3",
+            "request": "launch",
+            "mainClass": "test3",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindSubsequences",
+            "request": "launch",
+            "mainClass": "BackTracking.FindSubsequences",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch LetterCombinations",
+            "request": "launch",
+            "mainClass": "BackTracking.LetterCombinations",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuildTree",
+            "request": "launch",
+            "mainClass": "BinaryTree.BuildTree",
+            "projectName": "leetCode_786fa1fe"
+        },
+        {
+            "type": "java",
             "name": "Launch test",
             "request": "launch",
             "mainClass": "test",
