@@ -25,6 +25,21 @@ public class WorkBreak {
         return dp[s.length()];
     }
 
+    public boolean wordBreak1(String s, List<String> wordDict) {
+        boolean[] dp = new boolean[s.length() + 1]; // dp[i] 表示0 ~ i 可否由字典中单词拼接出
+        dp[0] = true;
+
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j < wordDict.size(); j++) {
+                int len = wordDict.get(j).length();
+                if (i < len)
+                    continue;
+                dp[i] = dp[i] || dp[i - len] && s.substring(i - len, i).equals(wordDict.get(j));
+            }
+        }
+        return dp[s.length()];
+    }
+
     public static void main(String[] args) {
         String s = "catsandog";
         List<String> wordDict = new ArrayList<>();
@@ -34,7 +49,7 @@ public class WorkBreak {
         wordDict.add("and");
         wordDict.add("cat");
         WorkBreak w1 = new WorkBreak();
-        System.out.println(w1.wordBreak(s, wordDict));
+        System.out.println(w1.wordBreak1(s, wordDict));
 
     }
 }

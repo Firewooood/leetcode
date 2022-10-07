@@ -27,10 +27,37 @@ public class FindMaxForm {
         return dp[m][n];
     }
 
+    public int findMaxForm1(String[] strs, int m, int n) {
+        int len = strs.length;
+        int[] zero = new int[len];
+        int[] one = new int[len];
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < strs[i].length(); j++) {
+                if (strs[i].charAt(j) == '0') {
+                    zero[i]++;
+                } else
+                    one[i]++;
+            }
+        }
+
+        int[][] dp = new int[m + 1][n + 1]; // dp[i][j] 表示最多有i个0，j个1的最大子集长度
+        dp[0][0] = 0;
+        for (int i = 0; i < len; i++) {
+            for (int j = m; j >= zero[i]; j--) {
+                for (int k = n; k >= one[i]; k--) {
+                    dp[j][k] = Math.max(dp[j - zero[i]][k - one[i]] + 1, dp[j][k]);
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
     public static void main(String[] args) {
         FindMaxForm f1 = new FindMaxForm();
         String[] strs = { "10", "0001", "111001", "1", "0" };
         int m = 5, n = 3;
-        System.out.println(f1.findMaxForm(strs, m, n));
+        // String[] strs = { "10", "0", "1" };
+        // int m = 1, n = 1;
+        System.out.println(f1.findMaxForm1(strs, m, n));
     }
 }
