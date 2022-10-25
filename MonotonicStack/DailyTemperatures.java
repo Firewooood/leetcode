@@ -20,9 +20,24 @@ public class DailyTemperatures {
         return res;
     }
 
+    public int[] dailyTemperatures1(int[] temperatures) {
+        Stack<Integer> stack = new Stack<>(); // stack 中存储temperatures 的下标
+        int[] res = new int[temperatures.length];
+        for (int i = 0; i < temperatures.length;) {
+            while (!stack.isEmpty() && temperatures[i] > temperatures[stack.peek()]) {
+                int temp = stack.pop();
+                res[temp] = i - temp;
+            }
+            stack.push(i);
+            i++;
+        }
+
+        return res;
+    }
+
     public static void main(String[] args) {
         int[] temperatures = { 73, 74, 75, 71, 69, 72, 76, 73 };
         DailyTemperatures d1 = new DailyTemperatures();
-        int[] res = d1.dailyTemperatures(temperatures);
+        int[] res = d1.dailyTemperatures1(temperatures);
     }
 }
