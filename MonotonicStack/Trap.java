@@ -26,9 +26,32 @@ public class Trap {
         return res;
     }
 
+    public int trap1(int[] height) {
+        int n = height.length;
+        if (n <= 2)
+            return 0;
+        int[] left = new int[n]; // 记录每个位置左边最大的柱子高度
+        int[] right = new int[n]; // 记录每个位置右边最大的柱子高度
+        int max = 0, res = 0;
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, height[i]);
+            left[i] = max;
+        }
+        max = 0;
+        for (int j = n - 1; j >= 0; j--) {
+            max = Math.max(max, height[j]);
+            right[j] = max;
+        }
+        for (int i = 0; i < n; i++) {
+            res += Math.min(left[i], right[i]) - height[i];
+        }
+
+        return res;
+    }
+
     public static void main(String[] args) {
         int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
         Trap t1 = new Trap();
-        System.out.println(t1.trap(height));
+        System.out.println(t1.trap1(height));
     }
 }

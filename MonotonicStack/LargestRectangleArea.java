@@ -71,9 +71,10 @@ public class LargestRectangleArea {
         return result;
     }
 
+
     public static void main(String[] args) {
         LargestRectangleArea l1 = new LargestRectangleArea();
-        int[] heights = { 2, 1, 5, 6, 2, 3 };
+        int[] heights = { 2, 4 };
         System.out.println(l1.largestRectangleArea2(heights));
     }
 }
