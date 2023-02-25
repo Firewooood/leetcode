@@ -1,7 +1,5 @@
 package BinaryTree;
 
-import algorithm.buildTree;
-
 public class BuildTree {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         int n = inorder.length;
@@ -29,24 +27,5 @@ public class BuildTree {
         int[] inorder = { 9, 3, 15, 20, 7 };
         int[] postorder = { 9, 15, 7, 20, 3 };
         b1.buildTree(inorder, postorder);
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }

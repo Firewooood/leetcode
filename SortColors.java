@@ -26,5 +26,5 @@ public class SortColors {
         int[] nums = { 2, 0, 1 };
         s1.sortColors(nums);
     }
-    
+
 }

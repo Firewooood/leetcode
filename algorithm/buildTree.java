@@ -6,9 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
+import BinaryTree.TreeNode;
+
 //通过数组的形式添加二叉树
-public class buildTree {
-    static TreeNode construct_binary_tree(int[] arr) {
+public class BuildTree {
+    public static TreeNode construct_binary_tree(int[] arr) {
         List<TreeNode> list = new ArrayList<>();
         Collections.fill(list, null);
         TreeNode root = null;
@@ -33,7 +35,7 @@ public class buildTree {
     }
 
     // 将同一层的二叉树节点放在一个列表中
-    static List<List<Integer>> show(TreeNode root) {
+    public static List<List<Integer>> show(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);

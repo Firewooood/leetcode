@@ -21,6 +21,23 @@ public class LongestCommonSubsequence {
         return res;
     }
 
+    public int longestCommonSubsequence1(String text1, String text2) {
+        int n = text1.length(), m = text2.length();
+        int[][] dp = new int[n + 1][m + 1]; // 长度为[0, i - 1]的字符串text1与长度为[0, j - 1]的字符串text2的最长公共子序列为dp[i][j]
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (text1.charAt(i) == text2.charAt(j)) {
+                    dp[i + 1][j + 1] = dp[i][j] + 1;
+                } else {
+                    dp[i + 1][j + 1] = Math.max(dp[i][j + 1], dp[i + 1][j]);
+                }
+            }
+        }
+
+        return dp[n][m];
+    }
+
     public static void main(String[] args) {
         String text1 = "abcde", text2 = "ace";
         LongestCommonSubsequence l1 = new LongestCommonSubsequence();
