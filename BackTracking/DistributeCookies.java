@@ -17,6 +17,7 @@ public class DistributeCookies {
         return res;
     }
 
+
     static void dfs(int[] cookies, List<Integer> nums, int k, int i) {
         if (i == cookies.length) {
 //            res = Math.min(res, (nums.stream().max(Integer::compareTo).get()).intValue());
